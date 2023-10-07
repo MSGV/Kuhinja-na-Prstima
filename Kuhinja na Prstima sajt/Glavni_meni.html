@@ -22,7 +22,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kuhinja na prstima</title>
   <link rel="stylesheet" href="CSS/Meni_CSS.css"> 
-
+  
 </head>
 
 <body>
@@ -36,6 +36,7 @@
             <a href="Pocetna.html">Početna</a>
             <a href="Glavni_meni.html">Meni</a>
             <a href="Kontakt.html">Kontakt</a>
+            <a><button id="darkModeToggle"><img src="Slike i ikonice/Ikonice/dark.png"></button></a>
         </nav>
 </header>
 
@@ -45,7 +46,33 @@
 
     <p>Ovo je neki tekst na stranici koji opisuje sadržaj. Ključne reči se mogu koristiti prirodno u tekstu.</p>
 
-    <img src="slika.jpg" alt="Opis slike za SEO optimizaciju" />
+    <section class="sekcija">
+      <h2>Predjela</h2>
+      <p>Ovde možete pronaći ukusne recepte za predjela.</p>
+      <a href="Predjela.html">
+          <img src="slika_predjela.jpg" alt="Predjela">
+      </a>
+      
+  </section>
+
+  <section class="sekcija">
+    <h2>Glavna jela</h2>
+    <p>Recepti za ukusna glavna jela čekaju vas ovde.</p>
+      <a href="Glavna_jela.html">
+          <img src="slika_glavna_jela.jpg" alt="Glavna jela">
+      </a>
+      
+  </section>
+
+  <section class="sekcija">
+    <h2>Dezerti</h2>
+    <p>Probajte naše fantastične dezerte i zadovoljite svoje slatke želje.</p>
+      <a href="Dezerti.html">
+          <img src="slika_dezerti.jpg" alt="Dezerti">
+      </a>
+      
+      
+  </section>
 
   </main>
 
@@ -57,9 +84,9 @@
         
         <div class="footer-social">
             <ul>
-                <li><a href="#"><img src="putanja-do-ikone-facebook.png" alt="Facebook"></a></li>
-                <li><a href="#"><img src="putanja-do-ikone-twitter.png" alt="Twitter"></a></li>
-                <li><a href="#"><img src="putanja-do-ikone-instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://www.facebook.com"><img src="Slike i ikonice/Ikonice/facebook.svg" alt="Facebook"></a></li>
+                <li><a href="https://twitter.com"><img src="Slike i ikonice/Ikonice/twitter.svg" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com"><img src="Slike i ikonice/Ikonice/instagram.svg" alt="Instagram"></a></li>
                 <!-- Dodajte više ikona društvenih medija prema potrebi -->
             </ul>
         </div>
@@ -68,6 +95,8 @@
         &copy; 2023 Kuhinja na prstima. Sva prava zadržana.
     </div>
 </footer> 
+
+<script src="JS/Darkmode.js"></script>
 </body>
 
 </html>

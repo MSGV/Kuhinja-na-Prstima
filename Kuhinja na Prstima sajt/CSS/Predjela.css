@@ -104,3 +104,21 @@ footer {
     font-size: 14px;
 }
 
+/*Dark mode*/
+#darkmodeToggle{
+    background-color: #333;
+  }
+
+  #darkModeToggle img{
+    width: 25px;
+    height:25px;
+  }
+  body {
+    background-color: #ffffff;
+    color: #000000;
+  }
+  
+  body.dark-mode {
+    background-color: #1a1a1a;
+    color: #ffffff;
+  }
