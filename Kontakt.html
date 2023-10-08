@@ -38,10 +38,17 @@
     <img id="meni-bar" src="Slike i ikonice/Ikonice/Ham.png">
         <nav class="navigacioni-bar">
             <a href="Pocetna.html">Početna</a>
-            <a href="Glavni_meni.html">Meni</a>
+            <div class="dropdown">
+                <a href="Glavni_meni.html" id="menuLink">Meni</a>
+                <div class="dropdown-content">
+                    <a href="Predjela.html">Predjela</a>
+                    <a href="Glavna_jela.html">Glavna jela</a>
+                    <a href="Dezerti.html">Dezerti</a>
+                </div>
+            </div>
             <a href="Kontakt.html">Kontakt</a>
-            <a><button id="darkModeToggle"><img src="Slike i ikonice/Ikonice/dark.png"></button></a>
         </nav>
+        <a><button class="round-button" id="darkModeToggle"><img src="Slike i ikonice/Ikonice/dark.png"></button></a>
 </header>
 
 <body>
@@ -82,8 +89,6 @@
                 </div>
             </div>
 
-
-
             <div class="col-lg-8">
                 <div class="form-group">
                     <input type="text" name="" id="" class="form-control input-fields text-bla"
@@ -91,22 +96,22 @@
                 </div>
                 <div class="form-group mt-lg-4 mt-3">
                     <input type="text" name="" id="" class="form-control input-fields text-bla"
-                        placeholder="Unesite vašu email adresu">
+                        placeholder="Unesite svoju email adresu">
                 </div>
                 <div class="form-group mt-lg-4 mt-3">
                     <textarea name="" id="" cols="30" rows="4" class="form-control input-fields text-bla"
-                        placeholder="Napišite poruku"></textarea>
+                        placeholder="Napišite svoju poruku"></textarea>
                 </div>
                 <div class="form-check mt-lg-5 mt-4">
                     <label class="form-check-label">
                         <input type="checkbox" class="form-check-input" name="" id="" value="checkedValue">
                         <span class="checkbox-label text-bla">Prihvatam,
-                            <a href="" class="text-decoration-none terms-and-service-link">Uslove korištena</a>
+                            <a href="" class="text-decoration-none terms-and-service-link">Uslove korištenja</a>
                         </span>
                     </label>
                 </div>
                 <div class="form-button mt-lg-5 mt-4">
-                    <button type="submit" class="form-btn text-uppercase fw-bold">Predaj</button>
+                    <button type="Predaj" class="form-btn text-uppercase fw-bold">Predaj</button>
                 </div>
             </div>
         </div>
