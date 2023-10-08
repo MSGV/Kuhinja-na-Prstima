@@ -66,6 +66,7 @@ main {
 .popular-recipes {
     margin-top: 30px;
     text-align: center;
+    margin-right: 20px;
 }
 
 .popular-recipes h2 {

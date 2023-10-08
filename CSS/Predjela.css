@@ -56,7 +56,7 @@ main {
   justify-content: center;
     align-items: center;
     margin-top: 10px; /* Prilagodite visinu margina prema potrebi */
-    padding-bottom: 255px;
+    padding-bottom: 274px;
 }
 
 .main-content {
@@ -218,32 +218,38 @@ footer {
     }
   }  
 
-.popular-recipes {
-  margin-top: 30px;
-  text-align: center;
-}
-
-.popular-recipes h2 {
-    font-size: 24px;
-    margin-bottom: 20px;
-}
-
-.recipe-slider {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    overflow: hidden;
-}
-
-.recipe-slide {
-    flex: 0 0 33.33%; /* Postavljanje širine slajda na trećinu širine roditeljskog elementa */
-    padding: 10px;
+  .section {
+    margin-top: 20px;
     text-align: center;
-}
-
-.recipe-slide img {
-    max-width: 100%;
-    height: auto;
-}
-
+    margin-bottom: 40px; /* Opciono: dodaje razmak između sekcija */
+  }
+  
+  .popular-recipes {
+    margin-top: 30px;
+    text-align: center;
+    margin-right: 20px;
+  }
+  
+  .popular-recipes h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+  }
+  
+  .recipe-slider {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      overflow: hidden;
+  }
+  
+  .recipe-slide {
+      flex: 0 0 33.33%; /* Postavljanje širine slajda na trećinu širine roditeljskog elementa */
+      padding: 10px;
+      text-align: center;
+  }
+  
+  .recipe-slide img {
+      max-width: 100%;
+      height: auto;
+  }
 

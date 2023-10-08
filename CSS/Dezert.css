@@ -55,7 +55,7 @@
 
 main {
     margin-top: 10px; /* Prilagodite visinu margina prema potrebi */
-    padding-bottom: 150px;
+    padding-bottom: 236px;
 }
 
 .main-content {
@@ -224,6 +224,7 @@ footer {
   .popular-recipes {
     margin-top: 30px;
     text-align: center;
+    margin-right: 20px;
   }
   
   .popular-recipes h2 {
