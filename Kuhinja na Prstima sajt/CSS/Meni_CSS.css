@@ -55,12 +55,19 @@
 /*Rad sa Telom*/
 
 main {
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     margin-top: 10px; /* Prilagodite visinu margina prema potrebi */
-    padding-bottom: 150px;
+    padding-bottom: 200px;
 }
 
 .main-content {
     /* Dodajte stil za glavni sadržaj stranice */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 20px; /* Primer: dodajte bočni i gornji razmak */
     margin-bottom: 80px; /* Dodajte margine na dnu kako biste razdvojili sadržaj od footera */
 }
@@ -216,3 +223,36 @@ footer {
     }
   }  
   
+  .container {
+    text-align: center;
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+}
+
+.text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+.container:hover .text {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.section {
+  margin-top: 20px;
+  text-align: center;
+  margin-bottom: 40px; /* Opciono: dodaje razmak između sekcija */
+}
+
