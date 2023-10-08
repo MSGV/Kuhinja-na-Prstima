@@ -40,17 +40,33 @@
         <img id="meni-bar" src="Slike i ikonice/Ikonice/Ham.png">
             <nav class="navigacioni-bar">
                 <a href="Pocetna.html">Početna</a>
-                <a href="Glavni_meni.html">Meni</a>
+                <div class="dropdown">
+                    <a href="Glavni_meni.html" id="menuLink">Meni</a>
+                    <div class="dropdown-content">
+                        <a href="Predjela.html">Predjela</a>
+                        <a href="Glavna_jela.html">Glavna jela</a>
+                        <a href="Dezerti.html">Dezerti</a>
+                    </div>
+                </div>
                 <a href="Kontakt.html">Kontakt</a>
                 <a><button id="darkModeToggle"><img src="Slike i ikonice/Ikonice/dark.png"></button></a>
             </nav>
     
     </header>
 
+    <section class="glvna-slika">
+        <div class="container-slika">
+        <img src="Slike i ikonice/Slike/pozadina.jpg" alt="Pozadina">
+        <div class="tekst-na-slici">
+        <h1 class="glow-pulse">Dobrodošli na Kuhinja na prstima</h1>
+        <p class="glow-effect">Ovde možete pronaći ukusne recepte i savete za kuvanje.</p>
+        <p class="glow-effect">Evo ih neki od naših najpopularnijih recepata, nadam se da će te uživati.</p>
+        </div>
+        </div>
+        </section>
+
     <main>
-        <h1>Dobrodošli na Kuhinja na prstima</h1>
-        <p>Ovde možete pronaći ukusne recepte i savete za kuvanje.</p>
-        <p>Evo ih neki od naših najpopularnijih recepata, nadam se da će te uživati.</p>
+        
 
         <section class="popular-recipes">
             <h2>Najpopularniji Recepti</h2>
@@ -114,6 +130,7 @@
                     <h3>Strudla sa makom</h3>
                     <p>Opis dezerta 2.</p>
                 </div>
+                <div class="recipe-slide">
                 <a href="TortaOdJagoda.html"><img src="Slike i ikonice/Slike/tortaodjagoda.png" alt="Torta od jagoda"></a>
                     <h3>Torta od jagoda</h3>
                     <p>Opis dezerta 3.</p>

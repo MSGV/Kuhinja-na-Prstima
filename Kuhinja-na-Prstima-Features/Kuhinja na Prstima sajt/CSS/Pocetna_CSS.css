@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
+    font-family: 'Roboto', sans-serif !important;
     margin: 0;
     padding: 0;
   }
@@ -36,7 +39,7 @@
   }
   
   header .navigacioni-bar a:hover{
-      border-bottom: 3px solid #2f9900;
+      border-bottom: 6px solid #2f9900;
   }
   
   #meni-bar{
@@ -66,6 +69,7 @@ main {
 .popular-recipes {
     margin-top: 30px;
     text-align: center;
+    margin-right: 20px;
 }
 
 .popular-recipes h2 {
@@ -276,4 +280,90 @@ body {
     flex: 0 0 33.33%; /* Postavite širinu svakog slajda na 33.33% kako bi bili jednako raspoređeni */
     text-align: center;
     padding: 20px;
+}
+
+
+
+
+/* Stilizacija dropdown menija */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 350px; /* Promenite željenu širinu menija */
+  z-index: 1;
+  top: 133%; /* Podešavanje položaja ispod "Meni" */
+  left: 50%; /* Podešavanje horizontalnog centriranja */
+  transform: translateX(-50%); /* Podešavanje horizontalnog centriranja */
+}
+
+.dropdown-content a  {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #2f9900;
+}
+
+/* Prikaži dropdown meni na hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.container-slika{
+  position: relative;
+  text-align: center;
+}
+
+.container-slika img{
+  filter: brightness(40%);
+}
+
+.tekst-na-slici{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.tekst-na-slici h1{
+  color: white;
+  font-size: 300%;
+}
+
+.tekst-na-slici p{
+  color: white;
+  font-size: 110%;
+}
+
+.glow-pulse {
+  font-size: 36px;
+  color: #fff;
+  text-align: center;
+  animation: glowPulse 2s infinite alternate;
+}
+
+.glow-effect{
+  text-shadow: 0 0 5px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5), 0 0 15px rgba(255, 255, 255, 0.5); 
+}
+
+@keyframes glowPulse {
+  0% {
+      text-shadow: 0 0 10px rgba(47, 215, 0, 0.5)
+                   0 0 20px rgba(47, 215, 0, 0.5)
+                   0 0 30px rgba(47, 215, 0, 0.5)
+  }
+  100% {
+      text-shadow: 0 0 20px rgba(47, 215, 0, 1),
+                   0 0 30px rgba(47, 215, 0, 1),
+                   0 0 40px rgba(47, 215, 0, 1);
+  }
 }

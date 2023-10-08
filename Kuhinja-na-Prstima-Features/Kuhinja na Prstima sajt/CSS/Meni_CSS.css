@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Pacifico&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Slab:wght@100;200;300;400;500;600;700;900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 *{
+    font-family: 'Roboto', sans-serif !important;
     margin: 0;
     padding: 0;
   }
@@ -36,8 +39,8 @@
   }
   
   header .navigacioni-bar a:hover{
-      border-bottom: 3px solid #2f9900;
-  }
+    border-bottom: 6px solid #2f9900;
+}
 
 
   #meni-bar{
@@ -230,7 +233,7 @@ footer {
 
 img {
     max-width: 100%;
-    display: block;
+    
 }
 
 .text {
@@ -256,4 +259,44 @@ img {
   text-align: center;
   margin-bottom: 40px; /* Opciono: dodaje razmak između sekcija */
 }
+
+
+
+
+
+/* Stilizacija dropdown menija */
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 350px; /* Promenite željenu širinu menija */
+  z-index: 1;
+  top: 133%; /* Podešavanje položaja ispod "Meni" */
+  left: 50%; /* Podešavanje horizontalnog centriranja */
+  transform: translateX(-50%); /* Podešavanje horizontalnog centriranja */
+}
+
+.dropdown-content a  {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #2f9900;
+}
+
+/* Prikaži dropdown meni na hover */
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
 
