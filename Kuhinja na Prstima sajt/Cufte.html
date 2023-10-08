@@ -27,13 +27,19 @@
               <div class="logo">
                   <img src="Slike i ikonice/Slike/kuhinjalogo.png" alt="Kuhinja na prstima Logo">
               </div>
-                  
-                  <nav class="navigacioni-bar">
-                      <a href="Pocetna.html">Početna</a>
-                      <a href="Glavni_meni.html">Meni</a>
-                      <a href="Kontakt.html">Kontakt</a>
-                  </nav>
-          
+              <nav class="navigacioni-bar">
+                <a href="Pocetna.html">Početna</a>
+                <div class="dropdown">
+                    <a href="Glavni_meni.html" id="menuLink">Meni</a>
+                    <div class="dropdown-content">
+                        <a href="Predjela.html">Predjela</a>
+                        <a href="Glavna_jela.html">Glavna jela</a>
+                        <a href="Dezerti.html">Dezerti</a>
+                    </div>
+                </div>
+                <a href="Kontakt.html">Kontakt</a>
+            </nav>
+            <a><button class="round-button" id="darkModeToggle"><img src="Slike i ikonice/Ikonice/dark.png"></button></a>
           </header>      
 
   <main>
@@ -82,6 +88,7 @@
 
 <script src="JS/jquery-3.7.0.min.js"></script>
 <script src="JS/Tabela.js"></script>
+<script src="JS/Darkmode.js"></script>
 
 </body>
 
