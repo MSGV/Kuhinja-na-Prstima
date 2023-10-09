@@ -272,7 +272,7 @@ img {
   background-color: #333;
   min-width: 350px; /* Promenite željenu širinu menija */
   z-index: 1;
-  top: 133%; /* Podešavanje položaja ispod "Meni" */
+  top: 135%; /* Podešavanje položaja ispod "Meni" */
   left: 50%; /* Podešavanje horizontalnog centriranja */
   transform: translateX(-50%); /* Podešavanje horizontalnog centriranja */
 }

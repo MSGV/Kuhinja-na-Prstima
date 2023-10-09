@@ -309,8 +309,6 @@ body {
         width: 250px;
     }
   }  
-  
-
 
 /* Stilizacija dropdown menija */
 .dropdown {
@@ -324,7 +322,7 @@ body {
   background-color: #333;
   min-width: 350px; /* Promenite željenu širinu menija */
   z-index: 1;
-  top: 117%; /* Podešavanje položaja ispod "Meni" */
+  top: 111%; /* Podešavanje položaja ispod "Meni" */
   left: 50%; /* Podešavanje horizontalnog centriranja */
   transform: translateX(-50%); /* Podešavanje horizontalnog centriranja */
 }

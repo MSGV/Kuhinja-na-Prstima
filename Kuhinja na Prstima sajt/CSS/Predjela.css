@@ -59,7 +59,7 @@ main {
   justify-content: center;
     align-items: center;
     margin-top: 10px; /* Prilagodite visinu margina prema potrebi */
-    padding-bottom: 255px;
+    padding-bottom: 173px;
 }
 
 .main-content {
@@ -302,4 +302,12 @@ footer {
 
 .round-button:hover {
   background-color: #2f9900; /* Boja pozadine dugmeta prilikom prelaska mišem preko njega */
+}
+
+h2{
+  margin-left: 30px;
+}
+
+p{
+  margin-left: 30px;
 }
