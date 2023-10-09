@@ -1,2 +1,2 @@
-# Kuvanje-Bez-Stresa
+# Kuhinja - na - Prstima
 Site dedicated cooking made in Visual Studio code IDE using HTML, CSS, JS,...
