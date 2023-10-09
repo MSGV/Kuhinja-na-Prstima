@@ -58,7 +58,7 @@
 
 main {
     margin-top: 10px; /* Prilagodite visinu margina prema potrebi */
-    padding-bottom: 173px;
+    padding-bottom: 285px;
 }
 
 .main-content {
@@ -243,7 +243,7 @@ footer {
   }
   
   .recipe-slide {
-      flex: 0 0 33.33%; /* Postavljanje širine slajda na trećinu širine roditeljskog elementa */
+      flex: 0 0 30%; /* Postavljanje širine slajda na trećinu širine roditeljskog elementa */
       padding: 10px;
       text-align: center;
   }
@@ -314,4 +314,9 @@ h2{
 
 p{
   margin-left: 30px;
+}
+
+main img{
+  border-radius: 25px;
+  width: 80%;
 }

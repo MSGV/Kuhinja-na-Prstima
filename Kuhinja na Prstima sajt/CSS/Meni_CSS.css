@@ -313,4 +313,8 @@ img {
   background-color: #2f9900; /* Boja pozadine dugmeta prilikom prelaska mišem preko njega */
 }
 
+main img{
+  border-radius: 25px;
+}
+
 
