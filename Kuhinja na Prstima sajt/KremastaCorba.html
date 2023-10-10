@@ -4,7 +4,7 @@
     
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Predjela</title>
+        <title>Predjela - Kremasta pileca corba </title>
         <meta name="description" content="Ovo je kratak opis sadržaja stranice za SEO optimizaciju. Ključne reči: SEO, optimizacija, primer." />
         <meta name="keywords" content="SEO, optimizacija, primer, ključne reči" />
         <meta name="author" content="Vaše Ime" />
@@ -17,16 +17,11 @@
         <meta property="og:url" content="https://www.primer.com/seo-optimizacija-sajta" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@primer" />
-      
-          <title>Kuhinja na Prstima</title>
-      
-      <html lang="en">
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Kuhinja na prstima</title>
-          <link rel="stylesheet" href="CSS/Jela.css"> 
-          
+
+        <link rel="stylesheet" href="CSS/ReceptTEMPLATE.css"> 
     </head>
+
+      <body>
           <header>
       
               <div class="logo">
@@ -49,40 +44,55 @@
 
   <main>
 
-    <h2>Predjela</h2>
+    <img src="Slike i ikonice/Slike/krempilecacorba.jpg" alt="Opis slike za SEO optimizaciju" />
 
-    <p>Ovo su neka od najtrazenijih predjela sa njihovim receptima.</p>
+    <h1>KREMASTA PILEĆA ČORBA</h1>
 
-    <section class="popular-recipes">
-        <h2>Najpopularniji Recepti</h2>
-        <div class="recipe-slider">
-            <!-- Slajder za predjela -->
-            <div class="recipe-slide">
-                <a class="container" href="CorbaOdPecuraka.html"><img src="Slike i ikonice/Slike/corbaodpecuraka.png" alt="Čorba od pecuraka">
-                    <div class="text">
-                      <h3>Čorba od pecuraka</h3>
-                      <p>Opis predjela 1.</p>
-                    </div>
-                 </a>
-            </div>
-            <div class="recipe-slide">
-                <a class="container" href="KremastaCorba.html"><img src="Slike i ikonice/Slike/krempilecacorba.jpg" alt="Krem pileća čorba">
-                    <div class="text">
-                        <h3>Krem pileća čorba</h3>
-                        <p>Opis predjela 2.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="recipe-slide">
-                <a class="container" href="ParadajzCorba.html"><img src="Slike i ikonice/Slike/paradajzcorba.png" alt="Paradajz čorba">
-                    <div class="text">
-                        <h3>Paradajz čorba</h3>
-                        <p>Opis predjela 3.</p>
-                    </div>
-                </a>
-            </div>
+    <div class="center-table">
+    <table id="tabelaSastojaka-KremCorba">
+        <thead>
+            <tr>
+                <th>Sastojci</th>
+                <th>Količina</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    </div>
+
+    <h2>Priprema</h2>
+
+    <p>Svo povrće (šargarepu, paškanat, koren peršuna, celer, crni luk i krompir) iseckati na sitne kockice i staviti, na malo ulja, da se prži. Posoliti, po ukusu. Pržiti, na tihoj vatri, oko 10-ak minuta. Zatim dodati meso (odvojiti batake od karabataka), naliti sa 1,5 l tople vode, poklopiti i, na tihoj vatri, kuvati, dok meso potpuno ne omekša. Kada se meso skuvalo, izvaditi ga, skloniti kožuricu, a meso iseći na deblje (a uže) trake. Iz čorbice izvaditi rešetkastom kašikom malo povrća, a ostalo povrće, ručnim blenderom, izmiksati. U tako pripremljenu čorbu vratiti iseckano meso, kao i izvađeno povrće. Naliti sa mlekom i pavlakom za kuvanje i staviti, na tihu vatru, samo da proključa. Paziti da ne zagori. Staviti, po ukusu, bibera i biozačina i na samom kraju ubaciti iseckani peršun. </p>
+    <br><br>
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <img src="Slike i ikonice/Slike/1.jpg" style="width:100%">
+          <div class="text">1 / 3</div>
         </div>
-    </section>
+        
+        <div class="mySlides fade">
+          <img src="Slike i ikonice/Slike/2.jpg" style="width:100%">
+          <div class="text">2 / 3</div>
+        </div>
+        
+        <div class="mySlides fade">
+          <img src="Slike i ikonice/Slike/3.jpg" style="width:100%">
+          <div class="text">3 / 3</div>
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+
 
   </main>
 
@@ -106,7 +116,10 @@
     </div>
 </footer>  
 
+<script src="JS/jquery-3.7.0.min.js"></script>
+<script src="JS/Tabela.js"></script>
 <script src="JS/Darkmode.js"></script>
+<script src="JS/slideshow.js"></script>
 </body>
 
 </html>

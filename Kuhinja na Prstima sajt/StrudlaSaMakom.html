@@ -4,7 +4,7 @@
     
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Predjela</title>
+        <title>Dezerti - Stridla sa makom</title>
         <meta name="description" content="Ovo je kratak opis sadržaja stranice za SEO optimizaciju. Ključne reči: SEO, optimizacija, primer." />
         <meta name="keywords" content="SEO, optimizacija, primer, ključne reči" />
         <meta name="author" content="Vaše Ime" />
@@ -17,16 +17,11 @@
         <meta property="og:url" content="https://www.primer.com/seo-optimizacija-sajta" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@primer" />
-      
-          <title>Kuhinja na Prstima</title>
-      
-      <html lang="en">
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Kuhinja na prstima</title>
-          <link rel="stylesheet" href="CSS/Jela.css"> 
-          
+
+        <link rel="stylesheet" href="CSS/ReceptTEMPLATE.css"> 
     </head>
+
+      <body>
           <header>
       
               <div class="logo">
@@ -49,40 +44,25 @@
 
   <main>
 
-    <h2>Predjela</h2>
+    <img src="Slike i ikonice/Slike/strudlasamakom.png" alt="Opis slike za SEO optimizaciju" />
 
-    <p>Ovo su neka od najtrazenijih predjela sa njihovim receptima.</p>
+    <h1>STRUDLA SA MAKOM</h1>
 
-    <section class="popular-recipes">
-        <h2>Najpopularniji Recepti</h2>
-        <div class="recipe-slider">
-            <!-- Slajder za predjela -->
-            <div class="recipe-slide">
-                <a class="container" href="CorbaOdPecuraka.html"><img src="Slike i ikonice/Slike/corbaodpecuraka.png" alt="Čorba od pecuraka">
-                    <div class="text">
-                      <h3>Čorba od pecuraka</h3>
-                      <p>Opis predjela 1.</p>
-                    </div>
-                 </a>
-            </div>
-            <div class="recipe-slide">
-                <a class="container" href="KremastaCorba.html"><img src="Slike i ikonice/Slike/krempilecacorba.jpg" alt="Krem pileća čorba">
-                    <div class="text">
-                        <h3>Krem pileća čorba</h3>
-                        <p>Opis predjela 2.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="recipe-slide">
-                <a class="container" href="ParadajzCorba.html"><img src="Slike i ikonice/Slike/paradajzcorba.png" alt="Paradajz čorba">
-                    <div class="text">
-                        <h3>Paradajz čorba</h3>
-                        <p>Opis predjela 3.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
+    <div class="center-table">
+    <table id="tabelaSastojaka-StrudlaSaMakom">
+        <thead>
+            <tr>
+                <th>Sastojci</th>
+                <th>Količina</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    </div>
+
+    <h2>Priprema</h2>
+
+    <p>U mlako mleko sa šećerom potopiti kvasac i ostaviti da nadođe. Mleko za poparavanje maka staviti sa šećerom da provri. U mleveni mak postepeno nalivati vrelo mleko i promešati. Proceniti koliko je dovoljno mleka da se masa mnogo ne razredi, ali ne treba ni da bude gusta. Ostaviti da se masa ohladi do nadevanja testa. U prosejano brašno izmešati so, dodati jaja, sok i nastruganu koricu limuna, mleko sa nadošlim kvascem, pa zamesiti meko glatko testo. Ostaviti testo, prekriveno krpom, da naraste. Naraslo testo podeliti na 3 dela. Svaki deo blago premesiti, oblikujući lopte. Prekriti krpom da ponovo naraste. Naraslu loptu testa rastanjiti oklagijom na 2-3 mm debljine, u obliku pravougaonika, dužine pleha u kojem će se peći štrudla. Rastanjeno testo premazati trećinom poparenog maka, a obod testa od 1 cm ne premazivati. Uviti rolat po dužoj strani, tako da slojevi testa budu zbijeni. Urolani list štrudle preneti u uljem podmazan pleh i isti postupak ponoviti i sa ostalim lopticama testa, vodeći računa da imeđu listova štrudle i uz zidove pleha ostane dovoljno praznog prostora za narastanje testa. Prekriti krpom pleh sa štrudlom, pa ostaviti da dobro naraste u plehu. Peći u zagrejanoj rerni oko 25-30 minuta na 180`C. Po potrebi prekriti štrudlu alu folijom da ne pregori gornja strana. U činijici razmutiti kašiku šećera sa malo vrele vode, pa premazati par puta gornju površinu vruće strudle, da dobije lep sjaj. Seći na šnite kad se prohladi. Po želji posuti mlevenim šećerom. </p>
 
   </main>
 
@@ -106,6 +86,8 @@
     </div>
 </footer>  
 
+<script src="JS/jquery-3.7.0.min.js"></script>
+<script src="JS/Tabela.js"></script>
 <script src="JS/Darkmode.js"></script>
 </body>
 

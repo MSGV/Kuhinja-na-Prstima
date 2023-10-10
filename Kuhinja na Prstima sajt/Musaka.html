@@ -4,7 +4,7 @@
     
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Predjela</title>
+        <title>Glavna jela - Musaka</title>
         <meta name="description" content="Ovo je kratak opis sadržaja stranice za SEO optimizaciju. Ključne reči: SEO, optimizacija, primer." />
         <meta name="keywords" content="SEO, optimizacija, primer, ključne reči" />
         <meta name="author" content="Vaše Ime" />
@@ -17,16 +17,11 @@
         <meta property="og:url" content="https://www.primer.com/seo-optimizacija-sajta" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:site" content="@primer" />
-      
-          <title>Kuhinja na Prstima</title>
-      
-      <html lang="en">
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1.0">
-          <title>Kuhinja na prstima</title>
-          <link rel="stylesheet" href="CSS/Jela.css"> 
-          
+
+        <link rel="stylesheet" href="CSS/ReceptTEMPLATE.css"> 
     </head>
+
+      <body>
           <header>
       
               <div class="logo">
@@ -49,40 +44,25 @@
 
   <main>
 
-    <h2>Predjela</h2>
+    <img src="Slike i ikonice/Slike/musaka.png" alt="Opis slike za SEO optimizaciju" />
 
-    <p>Ovo su neka od najtrazenijih predjela sa njihovim receptima.</p>
+    <h1>MUSAKA OD KROMPIRA</h1>
 
-    <section class="popular-recipes">
-        <h2>Najpopularniji Recepti</h2>
-        <div class="recipe-slider">
-            <!-- Slajder za predjela -->
-            <div class="recipe-slide">
-                <a class="container" href="CorbaOdPecuraka.html"><img src="Slike i ikonice/Slike/corbaodpecuraka.png" alt="Čorba od pecuraka">
-                    <div class="text">
-                      <h3>Čorba od pecuraka</h3>
-                      <p>Opis predjela 1.</p>
-                    </div>
-                 </a>
-            </div>
-            <div class="recipe-slide">
-                <a class="container" href="KremastaCorba.html"><img src="Slike i ikonice/Slike/krempilecacorba.jpg" alt="Krem pileća čorba">
-                    <div class="text">
-                        <h3>Krem pileća čorba</h3>
-                        <p>Opis predjela 2.</p>
-                    </div>
-                </a>
-            </div>
-            <div class="recipe-slide">
-                <a class="container" href="ParadajzCorba.html"><img src="Slike i ikonice/Slike/paradajzcorba.png" alt="Paradajz čorba">
-                    <div class="text">
-                        <h3>Paradajz čorba</h3>
-                        <p>Opis predjela 3.</p>
-                    </div>
-                </a>
-            </div>
-        </div>
-    </section>
+    <div class="center-table">
+    <table id="tabelaSastojaka-Musaka">
+        <thead>
+            <tr>
+                <th>Sastojci</th>
+                <th>Količina</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+    </div>
+
+    <h2>Priprema</h2>
+
+    <p>Krompir oljuštiti i iseći na kolutove po širini ili dužini. Kolutovi debljine oko 0,7 cm. Prokuvati ih do 70% kuvanosti i odmah procediti. Još bolje je prebaciti ih u hladnu vodu da se ne bi sami skuvali od svoje unutrašnje temperature i raspali. U tiganju ispržiti crni luk dok ne počne da žuti, zatim dodati mleveno meso, posoliti i pobiberiti po želji. Ovde takođe možete dodati i tucanu papriku ili sitno seckan beli luk, ali nije neophodno. Kada se meso dovoljno isprži (počne da rumeni) skloniti sa vatre i u posudu za pečenje počnite da ređate kolutove krompira i uključite rernu na 200 stepeni da bi se zagrejala na vreme. Možete ih slagati kao crep, a možete i kao pločice, zavisi od količine krompira i koliko želite redova musake. Kada ste složili prvi red prekrijte ga mlevenim mesom koje ste prethodno pripremili. Zatim sledi sledeći red krompira, u ovom slučaju poslednji. Kada ste sve pripremili, u jednu posudu razbijte dva jaja, dodajte kiselu pavlaku i mleko, so i biber po želji i dobro smućkajte dok se ne dobije homogena smesa. Sa ovim prelijte musaku ravnomerno. Ubacite musaku da se peče. Trebaće joj oko 40 minuta, ali najbolji indikator je ako gledate da li se jaje zapeklo kako treba. Posto je krompir bio ubačen gotovo skuvan ne morate brinuti da li će jaje da pregori, a krompir da ostane živ unutra.</p>
 
   </main>
 
@@ -106,6 +86,8 @@
     </div>
 </footer>  
 
+<script src="JS/jquery-3.7.0.min.js"></script>
+<script src="JS/Tabela.js"></script>
 <script src="JS/Darkmode.js"></script>
 </body>
 

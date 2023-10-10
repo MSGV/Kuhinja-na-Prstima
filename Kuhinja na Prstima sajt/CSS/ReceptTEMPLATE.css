@@ -5,12 +5,12 @@
     margin: 0;
     padding: 0;
   }
-
-  *::selection{
+  
+*::selection{
     background:#2f9900;
     color:#fff;
 }
-  
+
   header{
       text-align: center;
       background-color: #333; /* Boja pozadine zaglavlja */
@@ -21,7 +21,6 @@
   .logo img{
       width: 550px;
   }
-  
   
   header .navigacioni-bar a{
       color: #fff;
@@ -42,35 +41,16 @@
     border-bottom: 6px solid #2f9900;
 }
 
-
-  #meni-bar{
-    color:#fff;
-    border:.1rem solid #fff;
-    border-radius: .5rem;
-    font-size: 3rem;
-    padding:.5rem 1.2rem;
-    cursor: pointer;
-    display: none;
-    width: 30px;
-    height: 30px;
-  }
-
 /*Rad sa Telom*/
 
 main {
-  display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     margin-top: 10px; /* Prilagodite visinu margina prema potrebi */
-    padding-bottom: 200px;
+    padding-bottom: 150px;
+    text-align: center;
 }
 
 .main-content {
     /* Dodajte stil za glavni sadržaj stranice */
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 20px; /* Primer: dodajte bočni i gornji razmak */
     margin-bottom: 80px; /* Dodajte margine na dnu kako biste razdvojili sadržaj od footera */
 }
@@ -132,7 +112,96 @@ footer {
     font-size: 14px;
 }
 
-/*Dark mode*/
+table {
+    border-collapse: collapse;
+    width: 50%;
+}
+
+th, td {
+    border: 1px solid #000;
+    padding: 5px;
+    text-align: center;
+    font-size: 20px;
+    color: #000;
+}
+
+.center-table {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+main h1{
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+main h2{
+    padding-top: 3%;
+    padding-bottom: 1%;
+}
+
+main p{
+    font-size: 20px;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+
+/* Stilizacija dropdown menija */
+.dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    min-width: 350px; /* Promenite željenu širinu menija */
+    z-index: 1;
+    top: 133%; /* Podešavanje položaja ispod "Meni" */
+    left: 50%; /* Podešavanje horizontalnog centriranja */
+    transform: translateX(-50%); /* Podešavanje horizontalnog centriranja */
+  }
+  
+  .dropdown-content a  {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  
+  .dropdown-content a:hover {
+    background-color: #2f9900;
+  }
+  
+  /* Prikaži dropdown meni na hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  
+  /*Rad sa dugmetom*/
+
+.round-button {
+    position: fixed;
+    top: 20px; /* Podešavanje udaljenosti od vrha */
+    right: 20px; /* Podešavanje udaljenosti od desnog ruba */
+    width: 50px; /* Podešavanje širine dugmeta */
+    height: 50px; /* Podešavanje visine dugmeta */
+    background-color: #2f9900; /* Boja pozadine dugmeta */
+    color: #fff; /* Boja teksta */
+    border-radius: 50%; /* Postavljanje zaobljenih ivica za okruglo dugme */
+    text-align: center;
+    line-height: 50px; /* Postavljanje visine teksta kako bi bio vertikalno centriran */
+    text-decoration: none; /* Uklanjanje podvučenog teksta za link */
+  }
+  
+  .round-button:hover {
+    background-color: #2f9900; /* Boja pozadine dugmeta prilikom prelaska mišem preko njega */
+  }
+
+  /*Dark mode*/
 #darkmodeToggle{
     background-color: #333;
   }
@@ -150,6 +219,8 @@ footer {
     background-color: #1a1a1a;
     color: #ffffff;
   }
+
+/*Responzivnost*/
 
   @media (max-width:768px){
 
@@ -180,6 +251,7 @@ footer {
     }
   
   }
+  
   @media (max-width:450px){
 
     html{
@@ -220,101 +292,99 @@ footer {
   
     #meni-bar{
       display: initial;
+      
     }
+
     .logo img{
         width: 250px;
     }
   }  
+
+main img{
+    border-radius: 25px;
+  }
   
-  .container {
-    text-align: center;
-    position: relative;
-}
 
-img {
-    max-width: 100%;
-    
-}
-
-.text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    opacity: 0;
-    transition: opacity 0.5s, transform 0.5s;
-}
-
-.container:hover .text {
-    opacity: 1;
-    transform: translate(-50%, -50%) scale(1.1);
-}
-
-.section {
-  margin-top: 20px;
-  text-align: center;
-  margin-bottom: 40px; /* Opciono: dodaje razmak između sekcija */
-}
-
-/* Stilizacija dropdown menija */
-.dropdown {
+.slideshow-container {
+  max-width: 1000px;
   position: relative;
-  display: inline-block;
+  margin: auto;
 }
 
-.dropdown-content {
-  display: none;
+/* Next & previous dugmad */
+.prev, .next {
+  cursor: pointer;
   position: absolute;
-  background-color: #333;
-  min-width: 350px; /* Promenite željenu širinu menija */
-  z-index: 1;
-  top: 135%; /* Podešavanje položaja ispod "Meni" */
-  left: 50%; /* Podešavanje horizontalnog centriranja */
-  transform: translateX(-50%); /* Podešavanje horizontalnog centriranja */
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
 }
 
-.dropdown-content a  {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
+/* Pozicija levog "previous" dugmeta (UBACEN KOD FIX) */
+.prev{
+  left: 0;
 }
 
-.dropdown-content a:hover {
+/* Pozicija desnog "next" dugmeta */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* Na hover crna pozadina fade za strelice */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption slike tekst */
+.text {
+  text-shadow: 1px 2px #000;
+  font-weight: bold;
+  color: #f2f2f2;
+  font-size: 20px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 97.3%;
+  text-align: center;
+}
+
+
+/* Tacke ispod slike */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #5c5c5c;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
   background-color: #2f9900;
 }
 
-/* Prikaži dropdown meni na hover */
-.dropdown:hover .dropdown-content {
-  display: block;
+/* Fade naimacija slajda */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
 }
 
-/*Rad sa dugmetom*/
-
-.round-button {
-  position: fixed;
-  top: 20px; /* Podešavanje udaljenosti od vrha */
-  right: 20px; /* Podešavanje udaljenosti od desnog ruba */
-  width: 50px; /* Podešavanje širine dugmeta */
-  height: 50px; /* Podešavanje visine dugmeta */
-  background-color: #2f9900; /* Boja pozadine dugmeta */
-  color: #fff; /* Boja teksta */
-  border-radius: 50%; /* Postavljanje zaobljenih ivica za okruglo dugme */
-  text-align: center;
-  line-height: 50px; /* Postavljanje visine teksta kako bi bio vertikalno centriran */
-  text-decoration: none; /* Uklanjanje podvučenog teksta za link */
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
 }
 
-.round-button:hover {
-  background-color: #2f9900; /* Boja pozadine dugmeta prilikom prelaska mišem preko njega */
+/* Media za manje ekrane slideshowa */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }
-
-main img{
-  border-radius: 25px;
-}
-
-

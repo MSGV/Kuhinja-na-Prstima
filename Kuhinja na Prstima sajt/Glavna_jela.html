@@ -4,7 +4,7 @@
     
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Primer Naslova za SEO Optimizaciju - Ključne Reči</title>
+        <title>Glavna jela</title>
         <meta name="description" content="Ovo je kratak opis sadržaja stranice za SEO optimizaciju. Ključne reči: SEO, optimizacija, primer." />
         <meta name="keywords" content="SEO, optimizacija, primer, ključne reči" />
         <meta name="author" content="Vaše Ime" />
@@ -21,34 +21,70 @@
           <title>Kuhinja na Prstima</title>
       
       <html lang="en">
-      <head>
+      
           <meta charset="UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0">
           <title>Kuhinja na prstima</title>
-          <link rel="stylesheet" href="CSS/Glavna_jela.css"> 
-      
+          <link rel="stylesheet" href="CSS/Jela.css"> 
+          
+</head>
       <body>
           <header>
       
               <div class="logo">
                   <img src="Slike i ikonice/Slike/kuhinjalogo.png" alt="Kuhinja na prstima Logo">
               </div>
-                  
-                  <nav class="navigacioni-bar">
-                      <a href="Pocetna.html">Početna</a>
-                      <a href="Glavni_meni.html">Meni</a>
-                      <a href="Kontakt.html">Kontakt</a>
-                  </nav>
-          
+              <nav class="navigacioni-bar">
+                <a href="Pocetna.html">Početna</a>
+                <div class="dropdown">
+                    <a href="Glavni_meni.html" id="menuLink">Meni</a>
+                    <div class="dropdown-content">
+                        <a href="Predjela.html">Predjela</a>
+                        <a href="Glavna_jela.html">Glavna jela</a>
+                        <a href="Dezerti.html">Dezerti</a>
+                    </div>
+                </div>
+                <a href="Kontakt.html">Kontakt</a>
+            </nav>
+            <a><button class="round-button" id="darkModeToggle"><img src="Slike i ikonice/Ikonice/dark.png"></button></a>
           </header>      
 
   <main>
 
-    <h2>Podnaslov 1</h2>
+    <h2>Glavna Jela</h2>
 
-    <p>Ovo je neki tekst na stranici koji opisuje sadržaj. Ključne reči se mogu koristiti prirodno u tekstu.</p>
+    <p>Ovo su neka od najtrazenijih glavnih jela sa njihovim receptima.</p>
 
-    <img src="slika.jpg" alt="Opis slike za SEO optimizaciju" />
+    <section class="popular-recipes">
+        <h2>Najpopularniji Glavni Jela</h2>
+        <div class="recipe-slider">
+            <!-- Slajder za glavna jela -->
+            <div class="recipe-slide">
+                <a class="container" href="Cufte.html"><img src="Slike i ikonice/Slike/cufte.png" alt="Ćufte">
+                    <div class="text">
+                        <h3>Ćufte</h3>
+                        <p>Opis glavnog jela 1.</p>
+                     </div>
+                </a>
+            </div>
+            <div class="recipe-slide">
+                <a class="container" href="Musaka.html"> <img src="Slike i ikonice/Slike/musaka.png" alt="Musaka">
+                    <div class="text">
+                        <h3>Musaka</h3>
+                        <p>Opis glavnog jela 2.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="recipe-slide">
+                <a class="container" href="PunjenePaprike.html"><img src="Slike i ikonice/Slike/punjenepaprike.png" alt="Punjene paprike">
+                    <div class="text">
+                        <h3>Punjene paprike</h3>
+                        <p>Opis glavnog jela 3.</p>
+                    </div>
+                 </a>
+            </div>
+        </div>
+    </section>
 
   </main>
 
@@ -60,9 +96,9 @@
         
         <div class="footer-social">
             <ul>
-                <li><a href="#"><img src="putanja-do-ikone-facebook.png" alt="Facebook"></a></li>
-                <li><a href="#"><img src="putanja-do-ikone-twitter.png" alt="Twitter"></a></li>
-                <li><a href="#"><img src="putanja-do-ikone-instagram.png" alt="Instagram"></a></li>
+                <li><a href="https://www.facebook.com"><img src="Slike i ikonice/Ikonice/facebook.svg" alt="Facebook"></a></li>
+                <li><a href="https://twitter.com"><img src="Slike i ikonice/Ikonice/twitter.svg" alt="Twitter"></a></li>
+                <li><a href="https://www.instagram.com"><img src="Slike i ikonice/Ikonice/instagram.svg" alt="Instagram"></a></li>
                 <!-- Dodajte više ikona društvenih medija prema potrebi -->
             </ul>
         </div>
@@ -72,6 +108,7 @@
     </div>
 </footer>  
 
+<script src="JS/Darkmode.js"></script>
 </body>
 
 </html>
