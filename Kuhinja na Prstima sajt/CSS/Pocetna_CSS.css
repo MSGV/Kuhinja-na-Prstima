@@ -85,7 +85,7 @@ main {
 }
 
 .recipe-slide {
-    flex: 0 0 33.33%; /* Postavljanje širine slajda na trećinu širine roditeljskog elementa */
+    flex: 0 0 30%; /* Postavljanje širine slajda na trećinu širine roditeljskog elementa */
     padding: 10px;
     text-align: center;
 }
@@ -308,7 +308,7 @@ body {
 }
 
 .recipe-slide {
-    flex: 0 0 33.33%; /* Postavite širinu svakog slajda na 33.33% kako bi bili jednako raspoređeni */
+    flex: 0 0 30%; /* Postavite širinu svakog slajda na 33.33% kako bi bili jednako raspoređeni */
     text-align: center;
     padding: 20px;
 }
@@ -410,6 +410,7 @@ body {
   text-align: center;
   line-height: 50px; /* Postavljanje visine teksta kako bi bio vertikalno centriran */
   text-decoration: none; /* Uklanjanje podvučenog teksta za link */
+  z-index: 10 !important; 
 }
 
 .round-button:hover {
@@ -421,6 +422,7 @@ body {
 .container {
   text-align: center;
   position: relative;
+  text-decoration: none;
 }
 
 img {
@@ -429,19 +431,26 @@ img {
 }
 
 .text {
-  position: absolute;
+  position: relative;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   padding: 20px;
+  margin-right: 150px;
   border-radius: 10px;
   opacity: 0;
   transition: opacity 0.5s, transform 0.5s;
+ 
 }
 
 .container:hover .text {
   opacity: 1;
   transform: translate(-50%, -50%) scale(1.1);
+}
+
+main img{
+  border-radius: 25px;
+  width: 100%;
 }
